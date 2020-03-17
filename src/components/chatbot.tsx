@@ -31,6 +31,7 @@ const StyledChatbot = styled(ReactSimpleChatbot)`
   /* Removes shadow around avatar */
   .rsc-ts-bot .rsc-ts-image {
     box-shadow: none;
+    user-select: none;
   }
 
   .rsc-container {
@@ -74,6 +75,8 @@ const StyledChatbot = styled(ReactSimpleChatbot)`
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 15px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    user-select: none;
   }
 
   .rsc-os-option-element {
