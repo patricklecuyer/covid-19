@@ -8,6 +8,9 @@ export default {
     lastModified: 'Mise à jour {{date}}',
     feedbackLabel: 'Ceci vous a-t-il aidé?'
   },
+  embedded: {
+    startChat: "Parler à quelqu'un"
+  },
   share: {
     viewResults: "Voir votre trousse d'information",
     twitterButton: 'Partager sur Twitter',

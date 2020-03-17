@@ -12,10 +12,12 @@ import Footer from 'components/footer'
 import Title from 'components/title'
 import ShareResults from 'components/share-results'
 import ScrollAnchor from 'components/scroll-anchor'
+import EmbeddedActions from 'components/embedded-actions'
 
-const ENABLE_HEADER = !config.EMBEDDED
-const ENABLE_FOOTER = !config.EMBEDDED
-const ENABLE_SHARE = !config.EMBEDDED
+const SHOW_HEADER = !config.EMBEDDED
+const SHOW_FOOTER = !config.EMBEDDED
+const SHOW_SHARE = !config.EMBEDDED
+const SHOW_EMBEDDED_ACTIONS = config.EMBEDDED
 
 const useQuery = () => {
   const location = useLocation()
@@ -127,7 +129,7 @@ export const InfoPage: React.FC = () => {
   return (
     <InfoPageContainer>
       <ScrollAnchor />
-      {ENABLE_HEADER && (
+      {SHOW_HEADER && (
         <>
           <Header />
           <Title>{t('resultsPage.headerTitle')}</Title>
@@ -159,8 +161,9 @@ export const InfoPage: React.FC = () => {
         )}
       </InfoCard>
       <Spacer />
-      {ENABLE_SHARE && <ShareResults classes={classes} />}
-      {ENABLE_FOOTER && <Footer />}
+      {SHOW_EMBEDDED_ACTIONS && <EmbeddedActions />}
+      {SHOW_SHARE && <ShareResults classes={classes} />}
+      {SHOW_FOOTER && <Footer />}
     </InfoPageContainer>
   )
 }

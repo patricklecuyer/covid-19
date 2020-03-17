@@ -8,6 +8,9 @@ export default {
     lastModified: 'Updated {{date}}',
     feedbackLabel: 'Was this useful?'
   },
+  embedded: {
+    startChat: 'Talk to someone'
+  },
   share: {
     viewResults: 'View information package',
     twitterButton: 'Share on Twitter',

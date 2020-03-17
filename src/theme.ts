@@ -6,6 +6,7 @@ const colors = {
   secondary: '#534E71',
   secondaryLight: '#7378A3',
   text: '#534E71',
+  buttonText: '#FFFFFF',
   disabled: '#EAEDEE',
   background: '#FAFAFB',
   backgroundLight: '#FFFFFF'
